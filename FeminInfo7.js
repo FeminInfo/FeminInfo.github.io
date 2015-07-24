@@ -16,11 +16,11 @@ $(document).ready(function()
 	var cat11name = "None";            
 
 
-	var cat1 = ($("input[@name=m1]:checked").val() != "a"); 
+	var cat1 = ($("input[@name=m1]:checked").val() != "b"); 
 
-	var cat2 = ($("input[@name=m2]:checked").val() != "b");  
+	var cat2 = ($("input[@name=m2]:checked").val() != "c");  
 
-	var cat3 = ($("input[@name=m3]:checked").val() != "c");  
+	var cat3 = ($("input[@name=m3]:checked").val() != "a");  
 
 
 

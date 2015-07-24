@@ -18,9 +18,9 @@ $(document).ready(function()
 
 	var cat1 = ($("input[@name=h1]:checked").val() != "a"); 
 
-	var cat2 = ($("input[@name=h2]:checked").val() != "b");  
+	var cat2 = ($("input[@name=h2]:checked").val() != "c");  
 
-	var cat3 = ($("input[@name=h3]:checked").val() != "c");  
+	var cat3 = ($("input[@name=h3]:checked").val() != "b");  
 
 
 
