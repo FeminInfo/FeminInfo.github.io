@@ -14,17 +14,11 @@
 <script type="text/javascript" src="FeminInfo7.js"></script>
 <script type="text/javascript" src="quiz-1.js"></script>
 <script src="//use.typekit.net/hth4pck.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
- 
- 
- 
  
  <style type="text/css">
- 
- 
         .ui-page
         {
-            background-color:#F6A2E2;
+            background-color:#FFFFFF;
             background-size:cover;
         }
         h1{
@@ -56,15 +50,54 @@
         .ui-btn ui-btn-inline {
             font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
         }
-        #box{
+        .box{
             margin: 40px;
             padding: 20px;
-            background-color:#9999FF;
             color: #FFFFFF;
+		}
+	   .box p {
+		margin: 2%;
+		font-size: 24px;
+		color: #ef1072;  
+            
+        }
+        
+        .answers{
+        font-size: 18px;
+		color: #ef1072;
+		font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+        }
+        
+        #about {
+		margin: 5%;
+		font-size: 18px;
+		color: #ef1072;  
+            
+        }
+        #aboutT {
+		margin: 5%;
+		font-size: 24px;
+		color: #ef1072;  
+            
+        }
+        
+        #bodytext {
+		margin: 5%;
+		font-size: 18px;
+		color: #ef1072;  
+            
+        }
+        #titletext {
+		margin: 5%;
+		font-size: 24px;
+		color: #ef1072;  
+            
         }
     
         .round-button {
             width:80%;
+            margin-left: 10%;
+            margin-right: 10%;
         }
         .first{
        		width:40%;
@@ -74,9 +107,10 @@
             height:0;
             padding-bottom: 100%;
             border-radius: 50%;
-            border:7px solid #FFFFFF;
+            border:4px solid #ef1072;
             overflow:hidden;
             box-shadow: 0 0 3px white;
+            
         }
      
        	
@@ -114,11 +148,16 @@
         
         .round-button-circle:hover {
             background:#FFFFFF;
-            color: #F6A2E2
+            color: #ef1072;
         }
+        
+        .ui-body-a a:hover, html body .ui-group-theme-a a:hover {
+    		color: #ef1072;
+		}
+        
         .round-button a {
             display:block;
-            float:left;
+            float:center;
             width:100%;
             padding-top:50%;
             padding-bottom:50%;
@@ -126,7 +165,9 @@
             margin-top:-0.5em;
  
             text-align:center;
-            color:#FFFFFF;
+            font-size: 20px;
+			color: #ef1072; 
+  
             font-family:Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
             font-size:1 em;
             font-weight:bold;
@@ -348,6 +389,25 @@ display: none;
 display: none;
 font-style: italic;
 }
+
+.ui-page-theme-a .ui-bar-inherit {
+
+	background-color: #ef1072;
+	border-color: #ef1072;
+	color: #FFF;
+	text-shadow: 0px 1px 0px #ef1072;
+	font-family:Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active{
+
+	background-color: #ef1072;
+	border-color: #ef1072;
+	color: #FFF;
+	text-shadow: 0px 1px 0px #ef1072;
+	font-family:Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
         </style>
    
     </head>
@@ -380,23 +440,23 @@ font-style: italic;
                 <p id="subtext">The Go-To Guide for Educating Young Women About Health</p>
             </div></center>       
  
-<div class="ui-grid-a"><br> <br>
+<div class="ui-grid-a">
   <div class="ui-block-a"><div class="round-button"><div class="round-button-circle period"><a href="#periods" class="round-button" >Periods</a></div></div></div>
   <div class="ui-block-b"><div class="round-button"><div class="round-button-circle nutrition"><a href="#nutrition" class="round-button">Nutrition</a></div></div></div>
 </div>
 <div class="ui-grid-a"><br> <br>
-<div class="ui-block-a"> <div class="round-button"><div class="round-button-circle substanceawareness"><a href="#substanceawareness" class="round-button">Substance Awareness</a></div></div></div>
+<div class="ui-block-a"> <div class="round-button"><div class="round-button-circle substanceawareness"><a href="#substanceawareness" class="round-button">Substance<br> Awareness</a></div></div></div>
 <div class="ui-block-b"> <div class="round-button"><div class="round-button-circle sex"><a href="#sex" class="round-button">Sex</a></div></div></div>
 </div>
 <div class="ui-grid-a"><br> <br>
-  <div class="ui-block-a"> <div class="round-button"><div class="round-button-circle healthyrelations"><a href="#healthyrelations" class="round-button">Healthy Relations</a></div></div></div>
-  <div class="ui-block-b"><div class="round-button"><div class="round-button-circle mentalhealth"><a href="#mentalhealth" class="round-button">Mental Health</a></div></div></div>
+  <div class="ui-block-a"> <div class="round-button"><div class="round-button-circle healthyrelations"><a href="#healthyrelations" class="round-button">Healthy<br> Relations</a></div></div></div>
+  <div class="ui-block-b"><div class="round-button"><div class="round-button-circle mentalhealth"><a href="#mentalhealth" class="round-button">Mental<br> Health</a></div></div></div>
 </div>
 <br> <br>
 <div data-role="footer">
 <div data-role="navbar">
             <ul>
-                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#aboutus">About Us</a></li>
             </ul>
@@ -418,16 +478,14 @@ font-style: italic;
             <div class="box"><center><img id="photo" src="logo2.png" alt="Logo"/>
                 <p id="subtext">The Go-To Guide for Educating Young Women About Health</p>
             </div></center>
-            
-            <center><div id="box" style="height:225px;width:60%;">
-            <p> We strive to empower young women to care for their mental and physical health by providing them a private setting to view information, eliminating the stigma associated with feminine issues. </p>
-            </div></center>
+            <center><p id="aboutT"> Mission</p></center>
+            <p id="about"> We strive to empower young women to care for their mental and physical health by providing them a private setting to view information, eliminating the stigma associated with feminine issues. </p>
    
 <div data-role="footer">
 <div data-role="navbar">
             <ul>
-                <li><a href="#home" class="ui-btn-active">Home</a></li>
-                <li><a href="#mission">Mission</a></li>
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#mission" class="ui-btn-active ui-state-persist">Mission</a></li>
                 <li><a href="#aboutus">About Us</a></li>
             </ul>
             </div>
@@ -445,21 +503,21 @@ font-style: italic;
                 <p id="subtext">The Go-To Guide for Educating Young Women About Health</p>
         </div></center>
                 
-<center><div id="box" style="height:400px;width:70%;background-color:#9999FF">
-	<center><p>Why FeminInfo?<p></center>
-	<p>When brainstorming ideas for our final project for our Girls Who Code program, we decided an accessible women's health app was something that we wished existed and wanted to create. 
+
+	<center><p id="aboutT">Why FeminInfo?<p></center>
+	<p id="about">When brainstorming ideas for our final project for our Girls Who Code program, we decided an accessible women's health app was something that we wished existed and wanted to create. 
 	By apply our knowledge of JavaScript, HTML, and CSS, we were able to make a mobile website. We hope you enjoy it!
 	Email us with feedback or questions at <a href> femininfotracker@gmail.com</a></p>
-</div></center>
+</center>
      
 <center>
-<div id="box" style="height:800px;width:70%;background-color:#9999FF">
-<center><p>Meet the creators!</p></center>
+
+<center><p id="aboutT">Meet the creators!</p></center>
 <center><img id="photo" src="lexie.png" alt="us" style="height:250px;width:220px;"/></center>
-<center><p>Lexie Polevoi<br> Age: 17<br> School: The Branson School </center>
+<center><p id="about">Lexie Polevoi<br> Age: 17<br> School: The Branson School </center>
 <center><img id="photo" src="lucy.jpg" alt="us" style="height:280px;width:220px;"/></center>
-<center><p>Lucy Matz<br> Age: 17<br> School: San Francisco University High School</p></center>
-</div></center>
+<center><p id="about">Lucy Matz<br> Age: 17<br> School: San Francisco University High School</p></center>
+
 
 
         
@@ -467,9 +525,9 @@ font-style: italic;
         <div data-role="footer">
         <div data-role="navbar">
             <ul>
-                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#mission">Mission</a></li>
-                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#aboutus"  class="ui-btn-active ui-state-persist">About Us</a></li>
             </ul>
             </div>
         </div>
@@ -479,10 +537,10 @@ font-style: italic;
    
  <!-- Period Page -->
  <div data-role="page" id="periods">
- <h1>Periods</h1>
- <h2 id="periodQuotes"></h2>
-<div id="box">
-<p>
+ <center><p id="titletext">Periods</p></center>
+ <center> <p id="periodQuotes" id="bodytext" ></p> </center>
+
+<p id="bodytext">
 Fast Facts&#58;  <br>
 -Menstruation is the monthly shedding of the lining of the uterus <br>
 -Menstruation usually lasts 3-5 days (don&#146;t worry: anywhere from 2-7 days is completely normal) <br>
@@ -510,26 +568,27 @@ Sources and Resources&#58;  <br>
 <a href= http://kidshealth.org/teen/sexual_health/girls/menstruation.html#>Kids Health (Menstruation)</a><br>
 <a href= http://kidshealth.org/parent/infections/skin/toxic_shock.html>Kids Health (TSS)</a><br>
 <p>
-</div>
-<center> <a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home</a> </center>
-<center> <a href="#pQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a> </center>
+<center> <a href="#pQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a> </center>
+<center> <a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home</a> </center>
+
  </div>
  
  
  <!-- Period Quiz Page -->
  <div data-role="page" id="pQuiz">
  	<div id="box">
- 	<p class="question">1. When is it normal to get your period for the first time?</p>        
+ 	<center><p id="titletext">Period Quiz</p></center>
+ 	<p id="bodytext" class="question">1. When is it normal to get your period for the first time?</p>        
 
-	<ul class="answers">            
-	<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Before you are 8</label><br/>          
-	<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">When you are 20</label><br/>            
-	<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">There is no &#147;normal&#148; age! It depends on the individual</label><br/>            
+	<ul class="answers">           
+	<input type="radio" name="q1" value="a" id="q1a"><label for="q1a" >Before you are 8</label><br/>          
+	<input type="radio" name="q1" value="b" id="q1b"><label for="q1b" >When you are 20</label><br/>            
+	<input type="radio" name="q1" value="c" id="q1c"><label for="q1c" >There is no &#147;normal&#148; age! It depends on the individual</label><br/>            
 	<input type="radio" name="q1" value="d" id="q1d"><label for="q1d"> When you are 15</label><br/>       
-	</ul>        
+	</ul>       
 
 
-	<p class="question">2. When should you see a doctor about your period?</p>        
+	<p id="bodytext" class="question">2. When should you see a doctor about your period?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">If you experience severe bleeding and pain</label><br/>           
@@ -538,7 +597,7 @@ Sources and Resources&#58;  <br>
 	<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">If your period lasts for more than a week</label><br/>       
 	</ul>        
 
-	<p class="question">3. How should you control bleeding during your period?</p>        
+	<p id="bodytext" class="question">3. How should you control bleeding during your period?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">With pads and tampons</label><br/>            
@@ -548,9 +607,9 @@ Sources and Resources&#58;  <br>
 	</ul>        
 
 
- 	<div id="results">
-	Show me the answers!
-	</div> 
+ 	<center><div id="results" > <p id="bodytext">
+	Show me the answers! </p>
+	</div> <center>
 
 
 	<div id="category1">            
@@ -575,18 +634,15 @@ Sources and Resources&#58;  <br>
 	</div>	
  	</div>
  
- <center> <a href="#periods" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#periods" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
 
  <!-- Nutrition Page -->
  <div data-role="page" id="nutrition">
-  <h1>Nutrition</h1>
-  <h2 id="nutritionQuotes"></h2>
-  
-  <div id="box">
-  <p>
+  <center><p id="titletext">Nutrition</p>
+  <p id="nutritionQuotes" id="bodytext"></p></center>
   <center><img src="healthy.jpg" id="foodpyramid" alt="food pyramid" style="width:220px;height:150px;"/> <br><br> </center>
-Fast Facts&#58; <br>
+<p id="bodytext">Fast Facts&#58; <br>
 -The key to a healthy diet is moderation (only eating as much as your body needs) <br>
 -Take your time while eating meals and try to eat smaller portions <br>
 -Always eat breakfast and try to eat lighter towards the end of the day <br>
@@ -605,16 +661,17 @@ Sources and Resources&#58; <br>
 <a href= http://www.cdc.gov/sleep/about_sleep/how_much_sleep.htm> CDC.gov (sleep) </a> <br>
 
   </p>
-  </div>
+ 
   
-  <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home</a></center>
-   <center><a href="#nQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a></center>
+   <center><a href="#nQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a></center>
+   <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home</a></center>
  </div>
  
  <!-- Nutrition Quiz Page -->
   <div data-role="page" id="nQuiz">
  	<div id="box">
- 	<p class="question">1. What should you do to be healthy?</p>        
+ 	<center><p id="titletext">Nutrition Quiz</p></center>
+ 	<p id="bodytext" class="question">1. What should you do to be healthy?</p>        
 
 <ul class="answers">            
 <input type="radio" name="n1" value="a" id="n1a"><label for="n1a">Eat well</label><br/>          
@@ -624,7 +681,7 @@ Sources and Resources&#58; <br>
 </ul>        
 
 
-<p class="question">2. What does a healthy meal include?</p>        
+<p id="bodytext" class="question">2. What does a healthy meal include?</p>        
 
 <ul class="answers">            
 <input type="radio" name="n2" value="a" id="n2a"><label for="n2a">Carbs</label><br/>           
@@ -633,7 +690,7 @@ Sources and Resources&#58; <br>
 <input type="radio" name="n2" value="d" id="n2d"><label for="n2d">Protein</label><br/>       
 </ul>        
 
-<p class="question">3. What type of food should you eat in the largest quantity each meal?</p>        
+<p id="bodytext" class="question">3. What type of food should you eat in the largest quantity each meal?</p>        
 
 <ul class="answers">            
 <input type="radio" name="n3" value="a" id="n3a"><label for="n3a">Vegetables</label><br/>            
@@ -643,9 +700,9 @@ Sources and Resources&#58; <br>
 </ul>             
 
 
-<div id="nresults">            
-Show me the answers!       
-</div>  
+<center><div id="nresults">  <p id="bodytext">          
+Show me the answers!     </p>  
+</div> </center> 
 
 <div id="ncategory1">            
 <p>              
@@ -670,15 +727,13 @@ You answered them all right!</p>
 </div>
 </div>
  
- <center> <a href="#nutrition" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#nutrition" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
  
   <!-- Substance Awareness Page -->
  <div data-role="page" id="substanceawareness">
- <h1>Substance Awareness</h1>
- <div id="box">
- <p>
- 
+<center> <p id="titletext">Substance Awareness</p> </center>
+ <p id="bodytext">
  Fast Alcohol Facts&#58; <br>
 -Your weight determines how much water is in your body to dilute alcohol (in most cases, if you are lighter, it takes less alcohol to intoxicate you) <br>
 -Men often have more body weight to dilute alcohol. Women typically have 70&#37; to 80&#37; less of a stomach enzyme alcohol dehydrogenase, which aids in the metabolism of alcohol before it enters the bloodstream. <br>
@@ -710,18 +765,19 @@ Sources and Resources&#58;
 <a href="http://www.ceida.net.au/drugs.asp">Ceida.net (drugs)</a>
  
  </p>
- </div>
+
+ <center><a href="#saQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a></center>
  
+ <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home</a></center>
  
- <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home</a></center>
- <center><a href="#saQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a></center>
  </div>
  
  
   <!-- Substance Awareness Quiz Page -->
   <div data-role="page" id="saQuiz">
  	<div id="box">
- 	<p class="question">1. What type of drug is marijuana?</p>        
+ 	<center><p id="titletext">Substance Awareness Quiz</p></center>
+ 	<p id="bodytext" class="question">1. What type of drug is marijuana?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="sa1" value="a" id="sa1a"><label for="sa1a">Depressant</label><br/>          
@@ -731,7 +787,7 @@ Sources and Resources&#58;
 	</ul>        
 
 
-	<p class="question">2. If someone is unresponsive at a party after consuming alcohol and/or drugs, what should you do?</p>        
+	<p id="bodytext" class="question">2. If someone is unresponsive at a party after consuming alcohol and/or drugs, what should you do?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="sa2" value="a" id="sa2a"><label for="sa2a">Let them sleep it off</label><br/>           
@@ -740,9 +796,9 @@ Sources and Resources&#58;
 	<input type="radio" name="sa2" value="d" id="sa2d"><label for="sa2d">Leave them somewhere where someone will find them</label><br/>       
 	</ul>        
 
-	<p class="question">3. 12 oz of beer is equal to&#58;</p>        
+	<p id="bodytext" class="question">3. 12 oz of beer is equal to&#58;</p>        
 
-	<ul class="answers">            
+	<ul  class="answers">            
 	<input type="radio" name="sa3" value="a" id="sa3a"><label for="sa3a">1.25 oz of a drink with 40&#37; alcoholic content </label><br/>            
 	<input type="radio" name="sa3" value="b" id="sa3b"><label for="sa3b">All of the answers are correct</label><br/>            
 	<input type="radio" name="sa3" value="c" id="sa3c"><label for="sa3c">1 oz of a drink with 50&#37;  alcoholic content </label><br/>           
@@ -750,9 +806,9 @@ Sources and Resources&#58;
 	</ul>        
 
 
- 	<div id="saresults">
-	Show me the answers!
-	</div> 
+ 	<center><div id="saresults"><p id="bodytext">
+	Show me the answers!</p>
+	</div> <center>
 
 
 	<div id="sacategory1">            
@@ -777,7 +833,7 @@ Sources and Resources&#58;
 	</div>	
  	</div>
  
- <center> <a href="#substanceawareness" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#substanceawareness" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
  
  
@@ -785,12 +841,10 @@ Sources and Resources&#58;
  
   <!-- Sex Page -->
  <div data-role="page" id="sex">
-  <h1>Sex</h1>
-  <h2 id="sexQuotes"></h2>
-  <div id="box">
-  <p>
-Sex&#58;
-Fast Facts- <br>
+  <center><p id="titletext">Sex</p>
+  <p id="sexQuotes" id="bodytext" ></p></center>
+  <p id="bodytext">
+Fast Facts <br>
 -Sex is a physical and emotional experience <br>
 -All types of sex (vaginal, oral, and anal) can spread sexually transmitted diseases but only vaginal sex can get a woman pregnant <br>
 &nbsp; &nbsp;~According to the Centers for Disease Control and Prevention, over 300,000 births occur  <br>
@@ -814,18 +868,18 @@ two minors close in age both under the California age of consent to engage in se
   
   </p>
   
-  </div>
   
+  <center><a href="#sQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a></center>
+  <center><a href="#bst" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">#BetterSexTalk</a></center>
+  <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home</a></center>
   
-  <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home</a></center>
-  <center><a href="#sQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a></center>
-  <center><a href="#bst" class="ui-btn ui-btn-inline" style=color:#9999FF;">#BetterSexTalk</a></center>
  </div>
  
   <!-- Sex Quiz Page -->
  <div data-role="page" id="sQuiz">
  	<div id="box">
- 	<p class="question">1. What type of sex can get you pregnant?</p>        
+ 	<center><p id="titletext">Sex Quiz</p></center>
+ 	<p id="bodytext" class="question">1. What type of sex can get you pregnant?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="s1" value="a" id="s1a"><label for="s1a">Oral sex</label><br/>          
@@ -835,7 +889,7 @@ two minors close in age both under the California age of consent to engage in se
 	</ul>        
 
 
-	<p class="question">2. What protective measures can be done to practice safe sex?</p>        
+	<p id="bodytext" class="question">2. What protective measures can be done to practice safe sex?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="s2" value="a" id="s2a"><label for="s2a">Condoms</label><br/>           
@@ -844,7 +898,7 @@ two minors close in age both under the California age of consent to engage in se
 	<input type="radio" name="s2" value="d" id="s2d"><label for="s2d">STD screening</label><br/>       
 	</ul>        
 
-	<p class="question">3. When is sex considered consensual?</p>        
+	<p id="bodytext" class="question">3. When is sex considered consensual?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="s3" value="a" id="s3a"><label for="s3a">When one person says &#147;yes&#148;</label><br/>            
@@ -854,9 +908,9 @@ two minors close in age both under the California age of consent to engage in se
 	</ul>        
 
 
- 	<div id="sresults">
-	Show me the answers!
-	</div> 
+ 	<center><div id="sresults"><p id="bodytext">
+	Show me the answers!</p>
+	</div> </center>
 
 
 	<div id="scategory1">            
@@ -881,7 +935,7 @@ two minors close in age both under the California age of consent to engage in se
 	</div>	
  	</div>
  
- <center> <a href="#sex" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#sex" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
  
 
@@ -895,7 +949,7 @@ This short question frames the goal of #BetterSexTalk, a photography campaign st
 <script src="http://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="http://snapwidget.com/in/?h=YmV0dGVyc2V4dGFsa3xpbnwxMDB8MnwyMHx8bm98Mnxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=240715" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
  
-  <center> <a href="#sex" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+  <center> <a href="#sex" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
 
  
  
@@ -905,10 +959,10 @@ This short question frames the goal of #BetterSexTalk, a photography campaign st
  
   <!-- Healthy Relations Page -->
  <div data-role="page" id="healthyrelations">
-  <h1>Healthy Relations</h1>
-  <h2 id="relationsQuotes"></h2>
-  <div id="box">
-  <p>
+  <center><p id="titletext">Healthy Relationships</p>
+  <p id="relationsQuotes" id="bodytext"></p></center>
+ 
+  <p id="bodytext">
 Fast Facts&#58; <br>
 -The 7 ingredients to a healthy relationship include&#58; emotional responsibility, kindness/compassion, warmth/affection, time together, learning through conflict, trust, mutual attraction <br>
 -Communication is essential to a healthy relationship <br>
@@ -925,17 +979,18 @@ Sources and Resources&#58; <br>
 <a href= "http://kidshealth.org/teen/your_mind/relationships/break-up.html?tracking=T_RelatedArticle">kidshealth.org</a> <br>
 
   </p>
-  </div>
   
-  <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home</a></center>
-  <center><a href="#hQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a></center>
+  <center><a href="#hQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a></center>
+  <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home</a></center>
+  
  </div>
  
  
   <!-- Healthy Relations Quiz Page -->
  <div data-role="page" id="hQuiz">
  <div id="box">
- 	<p class="question">1. What is the best way to end a relationship?</p>        
+ <center><p id="titletext">Healthy Relationship Quiz</p></center>
+ 	<p id="bodytext" class="question">1. What is the best way to end a relationship?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="h1" value="a" id="h1a"><label for="h1a">In person</label><br/>          
@@ -945,7 +1000,7 @@ Sources and Resources&#58; <br>
 	</ul>        
 
 
-	<p class="question">2. Which is NOT an ingredient to a healthy relationship?</p>        
+	<p id="bodytext" class="question">2. Which is NOT an ingredient to a healthy relationship?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="h2" value="a" id="h2a"><label for="h2a">Respect</label><br/>           
@@ -954,7 +1009,7 @@ Sources and Resources&#58; <br>
 	<input type="radio" name="h2" value="d" id="h2d"><label for="h2d">Separate Identities</label><br/>       
 	</ul>        
 
-	<p class="question">3. What should you do if your friend is in an unhealthy relationship?</p>        
+	<p id="bodytext" class="question">3. What should you do if your friend is in an unhealthy relationship?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="h3" value="a" id="h3a"><label for="h3a">Gossip with your other friends</label><br/>            
@@ -964,9 +1019,9 @@ Sources and Resources&#58; <br>
 	</ul>        
 
 
- 	<div id="hresults">
-	Show me the answers!
-	</div> 
+ 	<center><div id="hresults"> <p id="bodytext">
+	Show me the answers! </p>
+	</div> </center>
 
 
 	<div id="hcategory1">            
@@ -991,17 +1046,17 @@ Sources and Resources&#58; <br>
 	</div>	
  	</div>
  
- <center> <a href="#healthyrelations" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#healthyrelations" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
  
  
  
   <!-- Mental Health Page -->
  <div data-role="page" id="mentalhealth">
-  <h1>Mental Health</h1>
-  <h2 id="mentalQuotes"></h2>
-  <div id="box">
-  <p>
+  <center><p id="titletext">Mental Health</p>
+  <p id="mentalQuotes" id="bodytext"></p> </center>
+  
+  <p id="bodytext">
 Fast Facts&#58; <br>
 1. Low self-esteem is a thinking disorder in which an individual views him/herself as inadequate, unlovable, and/or incompetent. Once formed, this negative view permeates every thought, producing faulty assumptions and ongoing self-defeating behavior. <br>
 2. Among high school students, 44&#37; of girls and 15&#37; of guys are attempting to lose weight. <br>
@@ -1018,15 +1073,18 @@ Sources and Resources&#58; <br>
 <a href="http://www.confidencecoalition.org/facts-teens">Confidence</a> <br>
   
   </p>
-  </div>
- <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back to Home </a></center>
- <center><a href="#mQuiz" class="ui-btn ui-btn-inline" style=color:#9999FF;">Test Yourself!</a></center>
+  
+  
+  <center><a href="#mQuiz" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Test Yourself!</a></center>
+ <center><a href="#home" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back to Home </a></center>
+ 
  </div>
    
     <!-- Mental Health Quiz Page -->
    <div data-role="page" id="mQuiz">
  	<div id="box">
- 	<p class="question">1. According to DoSomething, what is a teen girl's top wish?</p>        
+ 	<center><p id="titletext">Mental Health Quiz</p></center>
+ 	<p id="bodytext" class="question">1. According to DoSomething, what is a teen girl's top wish?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="m1" value="a" id="m1a"><label for="m1a">To get into a good college</label><br/>          
@@ -1036,7 +1094,7 @@ Sources and Resources&#58; <br>
 	</ul>        
 
 
-	<p class="question">2. What is a girl&rsquo;s self esteem most connected to?</p>        
+	<p id="bodytext" class="question">2. What is a girl&rsquo;s self esteem most connected to?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="m2" value="a" id="m2a"><label for="m2a">Her weight</label><br/>           
@@ -1045,7 +1103,7 @@ Sources and Resources&#58; <br>
 	<input type="radio" name="m2" value="d" id="m2d"><label for="m2d">How her body is shaped</label><br/>       
 	</ul>        
 
-	<p class="question">3. What percentage of teenagers will experience depression before adulthood?</p>        
+	<p id="bodytext" class="question">3. What percentage of teenagers will experience depression before adulthood?</p>        
 
 	<ul class="answers">            
 	<input type="radio" name="m3" value="a" id="m3a"><label for="m3a">20&#37;</label><br/>            
@@ -1055,8 +1113,8 @@ Sources and Resources&#58; <br>
 	</ul>        
 
 
- 	<div id="mresults">
-	Show me the answers!
+ 	<center><div id="mresults"> <p id="bodytext">
+	Show me the answers! <p>
 	</div> 
 
 
@@ -1082,7 +1140,7 @@ Sources and Resources&#58; <br>
 	</div>	
  	</div>
  
- <center> <a href="#mentalhealth" class="ui-btn ui-btn-inline" style=color:#9999FF;">Back</a> </center>
+ <center> <a href="#mentalhealth" class="ui-btn ui-btn-inline" style=color:#ef1072; font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;">Back</a> </center>
  </div>
  
  
