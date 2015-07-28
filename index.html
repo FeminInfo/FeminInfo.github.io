@@ -30,11 +30,11 @@
             font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
         }
         h2 {
+            margin: 5%;
             font-weight:bold;
-            color:#FFFFFF;
-            font-size: 50;
-            margin: 10px;
-            padding: 50px;
+			font-size: 18px;
+			color: #ef1072;  
+        
     
         subt{
         font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
@@ -55,6 +55,11 @@
             padding: 20px;
             color: #FFFFFF;
 		}
+		
+		#box{
+		
+		}
+		
 	   .box p {
 		margin: 2%;
 		font-size: 24px;
@@ -76,8 +81,9 @@
         }
         #aboutT {
 		margin: 5%;
-		font-size: 24px;
-		color: #ef1072;  
+		font-size: 28px;
+		color: #ef1072; 
+		 
             
         }
         
@@ -89,7 +95,7 @@
         }
         #titletext {
 		margin: 5%;
-		font-size: 24px;
+		font-size: 28px;
 		color: #ef1072;  
             
         }
@@ -422,8 +428,8 @@ font-style: italic;
     <div data-role="page" id="home">
        <!-- /navbar -->
  
- <div class="box"><center><img id="photo" src="logo2.png" alt="Logo"/>
-                <p id="subtext" style="font-size: 18px;">The Go-To Guide for Educating Young Women About Health</p>
+ <div id="box"><center><img id="photo" src="logo2.png" alt="Logo"/>
+                <p id="subtext">The Go-To Guide for Educating Young Women About Health</p>
             </div></center>       
  
 <div class="ui-grid-a">
@@ -524,7 +530,7 @@ font-style: italic;
  <!-- Period Page -->
  <div data-role="page" id="periods">
  <center><p id="titletext">Periods</p></center>
- <center> <p id="periodQuotes" id="bodytext" ></p> </center>
+ <center> <h2 id="periodQuotes" ></h2> </center>
 
 <p id="bodytext">
 Fast Facts&#58;  <br>
@@ -626,8 +632,8 @@ Sources and Resources&#58;  <br>
  <!-- Nutrition Page -->
  <div data-role="page" id="nutrition">
   <center><p id="titletext">Nutrition</p>
-  <p id="nutritionQuotes" id="bodytext"></p></center>
-  <center><img src="healthy.jpg" id="foodpyramid" alt="food pyramid" style="width:220px;height:150px;"/> <br><br> </center>
+  <h2 id="nutritionQuotes" ></h2></center>
+  <center><img src="healthy.png" id="foodpyramid" alt="food pyramid"/> <br><br> </center>
 <p id="bodytext">Fast Facts&#58; <br>
 -The key to a healthy diet is moderation (only eating as much as your body needs) <br>
 -Take your time while eating meals and try to eat smaller portions <br>
@@ -828,7 +834,7 @@ Sources and Resources&#58;
   <!-- Sex Page -->
  <div data-role="page" id="sex">
   <center><p id="titletext">Sex</p>
-  <p id="sexQuotes" id="bodytext" ></p></center>
+  <h2 id="sexQuotes"  ></h2></center>
   <p id="bodytext">
 Fast Facts <br>
 -Sex is a physical and emotional experience <br>
@@ -946,7 +952,7 @@ This short question frames the goal of #BetterSexTalk, a photography campaign st
   <!-- Healthy Relations Page -->
  <div data-role="page" id="healthyrelations">
   <center><p id="titletext">Healthy Relationships</p>
-  <p id="relationsQuotes" id="bodytext"></p></center>
+  <h2 id="relationsQuotes"></h2></center>
  
   <p id="bodytext">
 Fast Facts&#58; <br>
@@ -1040,7 +1046,7 @@ Sources and Resources&#58; <br>
   <!-- Mental Health Page -->
  <div data-role="page" id="mentalhealth">
   <center><p id="titletext">Mental Health</p>
-  <p id="mentalQuotes" id="bodytext"></p> </center>
+  <h2 id="mentalQuotes" ></h2> </center>
   
   <p id="bodytext">
 Fast Facts&#58; <br>
